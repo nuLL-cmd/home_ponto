@@ -94,5 +94,8 @@ dependencies {
 
     //Custom snack bar for Android
     implementation 'com.github.kishandonga:custom-snackbar:1.1'
+
+    //Material intro
+    implementation 'com.heinrichreimersoftware:material-intro:2.0.0'
 }
 
