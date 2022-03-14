@@ -9,15 +9,24 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
+        android:screenOrientation="portrait"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Home_ponto"
+        android:theme="@style/Theme.Home_ponto_two"
         tools:ignore="LockedOrientationActivity">
         <activity
-            android:name="com.automatodev.home_ponto.view.activity.IntroAppActivity"
-            android:windowSoftInputMode="adjustPan"
-            android:exported="true" />
+            android:name=".view.activity.CollectDataActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing"
+        android:theme="@style/Theme.Home_ponto_two">
+
+        </activity>
         <activity
-            android:name="com.automatodev.home_ponto.view.activity.SplashActivity"
+            android:name=".view.activity.IntroAppActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Home_ponto_two" />
+        <activity
+            android:name=".view.activity.SplashActivity"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.Home_ponto_two">
@@ -28,10 +37,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.automatodev.home_ponto.view.activity.MainActivity"
+            android:name=".view.activity.MainActivity"
             android:exported="true"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.Intro">
+            android:theme="@style/Theme.Home_ponto_two">
+
         </activity>
 
         <meta-data

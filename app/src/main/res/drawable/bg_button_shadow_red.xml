@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Drop Shadow Stack -->
+    <item>
+        <shape>
+            <padding android:top="@dimen/_1sdp" android:right="@dimen/_1sdp" android:bottom="@dimen/_1sdp" android:left="@dimen/_1sdp" />
+            <corners android:radius="@dimen/_10sdp" />
+            <solid android:color="#07EF2917" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding android:top="@dimen/_1sdp" android:right="@dimen/_1sdp" android:bottom="@dimen/_1sdp" android:left="@dimen/_1sdp" />
+            <corners android:radius="@dimen/_10sdp" />
+            <solid android:color="#12EF2917" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding android:top="@dimen/_1sdp" android:right="@dimen/_1sdp" android:bottom="@dimen/_1sdp" android:left="@dimen/_1sdp" />
+            <corners android:radius="@dimen/_10sdp" />
+            <solid android:color="#1DEF2917" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding android:top="@dimen/_1sdp" android:right="@dimen/_1sdp" android:bottom="@dimen/_1sdp" android:left="@dimen/_1sdp" />
+            <corners android:radius="@dimen/_10sdp" />
+            <solid android:color="#32EF2917" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding android:top="@dimen/_1sdp" android:right="@dimen/_1sdp" android:bottom="@dimen/_1sdp" android:left="@dimen/_1sdp" />
+            <corners android:radius="@dimen/_10sdp" />
+            <solid android:color="#52EF2917" />
+        </shape>
+    </item>
+
+    <!-- Background -->
+    <item>
+        <ripple
+            android:color="?android:colorControlHighlight">
+
+            <item android:id="@+id/mask">
+                <shape android:name="shape_unselected">
+                    <solid android:color="@color/red_EF2917"/>
+                    <corners android:radius="@dimen/_10sdp"/>
+                </shape>
+
+            </item>
+        </ripple>
+    </item>
+</layer-list>

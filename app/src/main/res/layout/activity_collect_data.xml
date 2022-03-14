@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:id="@+id/linearParent_register"
+            android:layout_width="match_parent"
+            tools:context=".view.activity.CollectDataActivity"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/teste"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_230sdp">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/anim_f_wellcome_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="15sp"
+                    app:lottie_autoPlay="true"
+                    app:lottie_fileName="user_new.json"
+                    app:lottie_loop="true" />
+
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/relative_data_a_collect_data"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/teste"
+                android:background="#fff"
+
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lbl_title_f_data_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:layout_marginBottom="15sp"
+                    android:drawablePadding="10dp"
+                    android:fontFamily="@font/baloo_da"
+                    android:shadowColor="#85C8C8C8"
+                    android:shadowDx="3"
+                    android:shadowDy="3"
+                    android:shadowRadius="40"
+                    android:text="@string/sobre_voce"
+                    android:textColor="@color/gray_596475"
+                    android:textSize="@dimen/_25ssp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edt_company_f_collect_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_60sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:background="@drawable/bg_edt_no_shadow"
+                    android:elevation="@dimen/_10sdp"
+                    android:hint="@string/empresa"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:drawableStart="@drawable/ic_baseline_business_24"
+                    android:singleLine="true"
+                    android:textAllCaps="true"
+                    android:textColor="@color/gray_596475"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edt_name_f_collect_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_60sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:background="@drawable/bg_edt_no_shadow"
+                    android:elevation="@dimen/_10sdp"
+                    android:hint="@string/nome_colaborador_hint"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:drawableStart="@drawable/ic_baseline_person_24"
+                    android:singleLine="true"
+                    android:textAllCaps="true"
+                    android:textColor="@color/gray_596475"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/edt_registration_f_collect_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_60sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:background="@drawable/bg_edt_no_shadow"
+                    android:elevation="@dimen/_10sdp"
+                    android:hint="@string/matricula_hint"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:drawableStart="@drawable/ic_baseline_contact_page_24"
+                    android:singleLine="true"
+                    android:textColor="@color/gray_596475"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:gravity="bottom"
+                        android:layout_height="match_parent">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            style="@style/Widget.AppCompat.ButtonBar.AlertDialog"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@drawable/bg_button_shadow_green"
+                            android:text="Iniciar"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            style="@style/Widget.AppCompat.ButtonBar.AlertDialog"
+                            android:layout_width="match_parent"
+                            android:layout_weight="1"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:background="@drawable/bg_button_shadow_red"
+                            android:text="Sair do app"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+</layout>

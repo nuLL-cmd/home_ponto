@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/relativeDaddy_f_collect_data"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:layout_height="match_parent">
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/anim_f_collect_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btn_collect_f_collect_data"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="15sp"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="registration.json"
+            app:lottie_loop="true" />
+
+
+        <TextView
+            android:id="@+id/lbl_title_f_collect_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15sp"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/baloo_da"
+            android:text="@string/vamos_comecar"
+            android:textColor="@color/gray_596475"
+            android:textSize="@dimen/_25ssp"
+            android:textStyle="bold" />
+
+        <androidx.constraintlayout.utils.widget.MotionButton
+            android:id="@+id/btn_collect_f_collect_data"
+            style="@style/Widget.AppCompat.ButtonBar.AlertDialog"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:background="@drawable/bg_button_shadow_green"
+            android:elevation="@dimen/_20sdp"
+            android:gravity="center"
+            android:onClick="startCollectData"
+            android:text="@string/coletar_de_dados"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+</layout>
