@@ -13,10 +13,11 @@
         android:theme="@style/Theme.Home_ponto"
         tools:ignore="LockedOrientationActivity">
         <activity
-            android:name=".activity.IntroAppActivity"
+            android:name="com.automatodev.home_ponto.view.activity.IntroAppActivity"
+            android:windowSoftInputMode="adjustPan"
             android:exported="true" />
         <activity
-            android:name=".activity.SplashActivity"
+            android:name="com.automatodev.home_ponto.view.activity.SplashActivity"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.Home_ponto_two">
@@ -27,7 +28,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.MainActivity"
+            android:name="com.automatodev.home_ponto.view.activity.MainActivity"
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.Intro">

@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Home_ponto</string>
+    <string name="digite_sua_matricula_fragment_registration">Digite sua matrícula</string>
+    <string name="matricula_teste_edit_fragment_registration">11994</string>
+    <string name="description_f_registration">É através de sua matricula que vamos\n identificar você durante essa nossa parceria.\n Ela é o seu registro único, \n então lembre-se inseri-la corretamente!</string>
+    <string name="title_fragment_registration">Vamos começar?</string>
+    <string name="description_f_data_info">Aqui priorizamos o seu tempo! \n Apenas com a digital você registra seu ponto,\n sem a necessidade de separar um tempo para preencher manualmente.</string>
+    <string name="title_f_data_info">Possibilidades</string>
 </resources>

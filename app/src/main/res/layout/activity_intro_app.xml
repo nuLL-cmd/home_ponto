@@ -7,10 +7,12 @@
 
     </data>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".activity.IntroAppActivity">
+        android:id="@+id/relativeDaddy_intro"
+        tools:context=".view.activity.IntroAppActivity">
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </RelativeLayout>
 </layout>

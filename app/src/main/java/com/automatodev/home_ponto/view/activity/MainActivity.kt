@@ -1,4 +1,4 @@
-package com.automatodev.home_ponto.activity
+package com.automatodev.home_ponto.view.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

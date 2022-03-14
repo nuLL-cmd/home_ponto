@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+        <RelativeLayout
+        android:id="@+id/relativeDaddy_f_data_info"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:layout_height="match_parent">
+
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/anim_f_data_info"
+                android:layout_width="match_parent"
+                android:layout_below="@id/lbl_title_f_data_info"
+                android:layout_height="@dimen/_300sdp"
+                android:layout_above="@+id/lbl_description_f_data_info"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="15sp"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="timer.json"
+                app:lottie_loop="true" />
+
+
+            <TextView
+                android:id="@+id/lbl_title_f_data_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="15sp"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/baloo_da"
+                android:text="@string/title_f_data_info"
+                android:textColor="@color/gray_838383"
+                android:textSize="@dimen/_25ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lbl_description_f_data_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:padding="@dimen/_20sdp"
+                android:shadowColor="#85C8C8C8"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="40"
+                android:text="@string/description_f_data_info"
+                android:textAlignment="center"
+                android:textColor="#838383"
+                android:textSize="@dimen/_12ssp" />
+
+
+
+    </RelativeLayout>
+</layout>
