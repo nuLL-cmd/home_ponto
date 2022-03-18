@@ -23,7 +23,7 @@
                 android:layout_marginEnd="10dp"
                 android:layout_marginBottom="15sp"
                 app:lottie_autoPlay="true"
-                app:lottie_fileName="information.json"
+                app:lottie_fileName="go.json"
                 app:lottie_loop="true" />
 
 
@@ -33,16 +33,16 @@
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_marginStart="15dp"
-                android:layout_marginTop="80dp"
                 android:shadowColor="#85C8C8C8"
                 android:shadowDx="3"
                 android:shadowDy="3"
                 android:shadowRadius="40"
+                android:layout_marginTop="80dp"
                 android:layout_marginEnd="15dp"
                 android:layout_marginBottom="15sp"
                 android:drawablePadding="10dp"
                 android:fontFamily="@font/baloo_da"
-                android:text="@string/bem_vindo"
+                android:text="@string/vamos_comecar"
                 android:textColor="@color/gray_596475"
                 android:textSize="@dimen/_25ssp"
                 android:textStyle="bold"
@@ -63,11 +63,11 @@
                 android:shadowDx="3"
                 android:shadowDy="3"
                 android:shadowRadius="40"
-                app:layout_parallaxFactor="2"
-                android:text="@string/e_atraves_da_sua_matricula_que"
+                android:text="@string/agora_que_voc_conhe_e_um_pouco_do_app"
                 android:textAlignment="center"
                 android:textColor="#838383"
-                android:textSize="@dimen/_12ssp" />
+                android:textSize="@dimen/_12ssp"
+                app:layout_parallaxFactor="2" />
 
 
 

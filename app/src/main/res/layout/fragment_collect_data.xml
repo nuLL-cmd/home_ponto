@@ -6,7 +6,7 @@
 
     </data>
 
-    <RelativeLayout
+    <com.heinrichreimersoftware.materialintro.view.parallax.ParallaxRelativeLayout
         android:id="@+id/relativeDaddy_f_collect_data"
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -18,12 +18,13 @@
             android:id="@+id/anim_f_collect_data"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_above="@+id/btn_collect_f_collect_data"
+            android:layout_above="@id/lbl_description_f_data_info"
+            android:layout_below="@id/lbl_title_f_collect_data"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="15sp"
             app:lottie_autoPlay="true"
-            app:lottie_fileName="registration.json"
+            app:lottie_fileName="list.json"
             app:lottie_loop="true" />
 
 
@@ -35,35 +36,39 @@
             android:layout_marginStart="15dp"
             android:layout_marginTop="80dp"
             android:layout_marginEnd="15dp"
+            android:shadowColor="#85C8C8C8"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="40"
             android:layout_marginBottom="15sp"
             android:drawablePadding="10dp"
             android:fontFamily="@font/baloo_da"
-            android:text="@string/vamos_comecar"
+            android:text="Dica de ouro"
             android:textColor="@color/gray_596475"
             android:textSize="@dimen/_25ssp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            app:layout_parallaxFactor="2" />
 
-        <androidx.constraintlayout.utils.widget.MotionButton
-            android:id="@+id/btn_collect_f_collect_data"
-            style="@style/Widget.AppCompat.ButtonBar.AlertDialog"
-            android:layout_width="@dimen/_150sdp"
-            android:layout_centerHorizontal="true"
-            android:layout_height="@dimen/_70sdp"
+        <TextView
+            android:id="@+id/lbl_description_f_data_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_marginStart="@dimen/_10sdp"
             android:layout_marginTop="@dimen/_15sdp"
             android:layout_marginEnd="@dimen/_10sdp"
             android:layout_marginBottom="@dimen/_20sdp"
-            android:background="@drawable/bg_button_shadow_green"
-            android:elevation="@dimen/_20sdp"
             android:gravity="center"
-            android:onClick="startCollectData"
-            android:text="@string/coletar_de_dados"
+            app:layout_parallaxFactor="2"
+            android:padding="@dimen/_20sdp"
+            android:shadowColor="#85C8C8C8"
+            android:shadowDx="3"
+            android:shadowDy="3"
+            android:shadowRadius="40"
+            android:text="Registrando seu ponto pelo app, você obtém informações sólidas sobre entradas, saidas, intervalos, horas extras, etc."
             android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="@dimen/_12ssp"
-            android:textStyle="bold" />
+            android:textColor="#838383"
+            android:textSize="@dimen/_12ssp" />
 
-
-    </RelativeLayout>
+    </com.heinrichreimersoftware.materialintro.view.parallax.ParallaxRelativeLayout>
 </layout>

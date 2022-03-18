@@ -10,7 +10,9 @@
     <color name="green_96AFB1">#96AFB1 </color>
     <color name="gray_596475">#596475</color>
     <color name="gray_838383">#838383</color>
-    <color name="font_primary">#345d5b</color>
-    <color name="green_09625A">#0A6961</color>
+    <color name="green_345d5b">#345d5b</color>
+    <color name="purple_291965">#291965</color>
+    <color name="purple_943EC3">#943EC3</color>
+    <color name="purple_533EA8">#533EA8</color>
 
 </resources>

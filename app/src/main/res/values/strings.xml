@@ -2,9 +2,9 @@
     <string name="app_name">Home_ponto</string>
     <string name="digite_sua_matricula_fragment_registration">Digite sua matrícula</string>
     <string name="matricula_teste_edit_fragment_registration">11994</string>
-    <string name="e_atraves_da_sua_matricula_que">É através de sua matricula que vamos identificar você durante essa nossa parceria. Ela é o seu registro único, então lembre-se inseri-la corretamente!</string>
+    <string name="e_atraves_da_sua_matricula_que">É através de sua matricula que vamos identificar você durante essa nossa parceria. Ela é o seu registro único, então lembre-se de inseri-la corretamente!</string>
     <string name="bem_vindo">Bem vindo</string>
-    <string name="aqui_priorizamos_o_seu_tempo">Aqui priorizamos o seu tempo! Apenas com a digital você registra seu ponto, sem a necessidade de separar um tempo para preencher manualmente.</string>
+    <string name="aqui_priorizamos_o_seu_tempo">Aqui priorizamos o seu tempo! Apenas com a digital você registra seu ponto sem a necessidade de separar um tempo para faze-lo manualmente.</string>
     <string name="objetivo">Objetivo</string>
     <string name="name_test_f_collect_data">Marco Aurélio José Francisco</string>
     <string name="matricula_hint">Matrícula</string>
@@ -13,4 +13,7 @@
     <string name="coletar_de_dados">Coletar os dados</string>
     <string name="empresa">Empresa</string>
     <string name="sobre_voce">Sobre o colaborador</string>
+    <string name="agora_que_voc_conhe_e_um_pouco_do_app">Agora que você conheçe um pouco do app, é hora de dar inicio a nossa jornada de trabalho!</string>
+    <string name="sair_do_app">Sair do app</string>
+    <string name="iniciar">Iniciar</string>
 </resources>

@@ -6,7 +6,7 @@
 
     </data>
 
-        <RelativeLayout
+        <com.heinrichreimersoftware.materialintro.view.parallax.ParallaxRelativeLayout
         android:id="@+id/relativeDaddy_f_data_info"
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -37,34 +37,40 @@
                 android:layout_marginTop="80dp"
                 android:layout_marginEnd="15dp"
                 android:layout_marginBottom="15sp"
+                android:shadowColor="#85C8C8C8"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="40"
                 android:drawablePadding="10dp"
                 android:fontFamily="@font/baloo_da"
                 android:text="@string/objetivo"
-                android:textColor="@color/font_primary"
+                android:textColor="@color/gray_596475"
                 android:textSize="@dimen/_25ssp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                app:layout_parallaxFactor="2" />
 
             <TextView
                 android:id="@+id/lbl_description_f_data_info"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
+                android:layout_marginStart="@dimen/_10sdp"
                 android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
                 android:layout_marginBottom="@dimen/_20sdp"
                 android:gravity="center"
                 android:padding="@dimen/_20sdp"
-                android:layout_marginStart="@dimen/_10sdp"
-                android:layout_marginEnd="@dimen/_10sdp"
                 android:shadowColor="#85C8C8C8"
                 android:shadowDx="3"
                 android:shadowDy="3"
+                app:layout_parallaxFactor="2"
                 android:shadowRadius="40"
                 android:text="@string/aqui_priorizamos_o_seu_tempo"
                 android:textAlignment="center"
                 android:textColor="#838383"
-                android:textSize="@dimen/_15ssp"/>
+                android:textSize="@dimen/_12ssp" />
 
 
 
-    </RelativeLayout>
+    </com.heinrichreimersoftware.materialintro.view.parallax.ParallaxRelativeLayout>
 </layout>

@@ -22,6 +22,7 @@
             <RelativeLayout
                 android:id="@+id/teste"
                 android:layout_width="match_parent"
+                android:background="@color/white"
                 android:layout_height="@dimen/_230sdp">
 
                 <com.airbnb.lottie.LottieAnimationView
@@ -47,15 +48,13 @@
                 android:layout_height="match_parent"
                 android:layout_below="@+id/teste"
                 android:background="#fff"
-
-                android:gravity="bottom"
+                android:gravity="center"
                 android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/lbl_title_f_data_info"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_30sdp"
                     android:layout_marginBottom="15sp"
                     android:drawablePadding="10dp"
@@ -138,26 +137,30 @@
                         android:layout_height="match_parent">
 
                         <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btn_exit_a_collect_data"
                             style="@style/Widget.AppCompat.ButtonBar.AlertDialog"
                             android:layout_width="match_parent"
                             android:layout_weight="1"
                             android:layout_height="@dimen/_60sdp"
-                            android:layout_marginStart="@dimen/_10sdp"
                             android:layout_marginTop="@dimen/_10sdp"
-                            android:background="@drawable/bg_button_shadow_green"
-                            android:text="Iniciar"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:background="@drawable/bg_button_shadow_red"
+                            android:text="@string/sair_do_app"
+                            android:textAlignment="center"
                             android:textColor="@color/white"
                             android:textStyle="bold" />
 
                         <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/btn_start_a_collect_data"
                             style="@style/Widget.AppCompat.ButtonBar.AlertDialog"
                             android:layout_width="match_parent"
+                            android:textAlignment="center"
                             android:layout_weight="1"
                             android:layout_height="@dimen/_60sdp"
-                            android:layout_marginTop="@dimen/_10sdp"
                             android:layout_marginEnd="@dimen/_10sdp"
-                            android:background="@drawable/bg_button_shadow_red"
-                            android:text="Sair do app"
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:background="@drawable/bg_button_shadow_green"
+                            android:text="@string/iniciar"
                             android:textColor="@color/white"
                             android:textStyle="bold" />
 

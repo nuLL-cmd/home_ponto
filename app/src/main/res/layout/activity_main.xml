@@ -7,11 +7,58 @@
 
     </data>
 
-    <LinearLayout
+    <ScrollView
+        android:id="@+id/scrollDaddy_a_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/background_F2F8FB"
-        tools:context=".view.activity.MainActivity">
+        android:background="@color/purple_291965"
+        android:fillViewport="true">
 
-    </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/relativeDaddy_a_main"
+            android:layout_width="match_parent"
+            android:background="@color/purple_291965"
+            tools:context=".view.activity.CollectDataActivity"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtDate_a_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_48sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_24sdp"
+                android:layout_toStartOf="@id/btnSettings_a_main"
+                android:fontFamily="@font/baloo_da"
+                android:text="20 Fevereiro"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20sdp" />
+
+            <ImageButton
+                android:id="@+id/btnSettings_a_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/txtDate_a_main"
+                android:layout_alignBottom="@id/txtDate_a_main"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:background="@drawable/bg_button_color_primary_global"
+                android:src="@drawable/ic_settings" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardPrimaryData_a_main"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp"
+                android:layout_below="@id/txtDate_a_main"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                app:cardCornerRadius="@dimen/_20ssp"
+                app:cardElevation="@dimen/_20sdp" />
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
 </layout>

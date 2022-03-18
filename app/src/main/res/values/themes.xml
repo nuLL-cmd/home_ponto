@@ -1,20 +1,5 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Theme.Home_ponto" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/green_B0D9D7</item>
-        <item name="colorPrimaryVariant">@color/green_B0D9D7</item>
-        <item name="colorOnPrimary">@color/white</item>
-        <!-- Secondary brand color. -->
-        <item name="colorOnSecondary">@color/black</item>
-        <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
-        <item name="android:forceDarkAllowed" tools:targetApi="q"> false </item>
-        <item name="android:windowLightStatusBar">true</item>
-        <!-- Customize your theme here. -->
-    </style>
-
-    <style name="Theme.Home_ponto_two" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <style name="Theme.Home_ponto_intro" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/white</item>
         <item name="colorPrimaryVariant">@color/white</item>
@@ -24,24 +9,25 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <item name="android:forceDarkAllowed" tools:targetApi="q"> false </item>
+        <item name="android:navigationBarColor" tools:targetApi="21">?attr/colorPrimaryVariant</item>
         <item name="android:windowLightStatusBar">true</item>
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="Theme.Home_ponto_tree" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <style name="Theme.Home_ponto_app" parent="Theme.MaterialComponents.Light.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/white</item>
-        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorPrimary">@color/purple_291965</item>
+        <item name="colorPrimaryVariant">@color/purple_291965</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
-        <item name="android:forceDarkAllowed" tools:targetApi="q"> false </item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <item name="android:navigationBarColor" tools:targetApi="21">#291965</item>
         <item name="android:windowLightStatusBar">false</item>
         <!-- Customize your theme here. -->
     </style>
-
     <style name="AppThemeTransparent" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="android:forceDarkAllowed" tools:targetApi="q"> false </item>
@@ -56,5 +42,48 @@
     <style name="BottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
         <item name="android:background">@android:color/transparent</item>
     </style>
+
+    <color name="mi_icon_color_dark">#ffffffff</color>
+    <color name="mi_icon_color_light">@color/purple_291965</color>
+    <color name="mi_ripple_color">#17000000</color>
+    <color name="mi_status_bar_background">#fff</color>
+    <color name="mi_text_color_primary_dark">#ffffffff</color>
+    <color name="mi_text_color_primary_light">#de000000</color>
+    <color name="mi_text_color_secondary_dark">#b3ffffff</color>
+    <color name="mi_text_color_secondary_light">#8a000000</color>
+    <dimen name="mi_baseline">16dp</dimen>
+    <dimen name="mi_baseline_half">8dp</dimen>
+    <dimen name="mi_button_cta_height">48dp</dimen>
+    <dimen name="mi_margin_bottom_pager_indicator">39dp</dimen>
+    <dimen name="mi_y_offset">144dp</dimen>
+    <item name="mi_button_back" type="id"/>
+    <item name="mi_button_cta" type="id"/>
+    <item name="mi_button_cta_wrapper" type="id"/>
+    <item name="mi_button_next" type="id"/>
+    <item name="mi_description" type="id"/>
+    <item name="mi_frame" type="id"/>
+    <item name="mi_image" type="id"/>
+    <item name="mi_pager" type="id"/>
+    <item name="mi_pager_indicator" type="id"/>
+    <item name="mi_title" type="id"/>
+    <plurals name="mi_label_grant_permission">
+        <item quantity="one">Permitir</item>
+        <item quantity="other">Permitir todas</item>
+    </plurals>
+    <string name="mi_content_description_back">Back</string>
+    <string name="mi_content_description_next">Next</string>
+    <string name="mi_content_description_next_finish">Next/Finish</string>
+    <string name="mi_content_description_skip">Skip</string>
+    <string name="mi_label_button_cta">Get started</string>
+    <declare-styleable name="InkPageIndicator">
+        <attr format="dimension" name="dotDiameter"/>
+        <attr format="dimension" name="dotGap"/>
+        <attr format="integer" name="animationDuration"/>
+        <attr format="color" name="pageIndicatorColor"/>
+        <attr format="color" name="currentPageIndicatorColor"/>
+    </declare-styleable>
+    <declare-styleable name="ParallaxLayout_Layout">
+        <attr format="float" name="layout_parallaxFactor"/>
+    </declare-styleable>
 
 </resources>
