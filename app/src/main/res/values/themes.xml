@@ -11,6 +11,7 @@
         <item name="android:forceDarkAllowed" tools:targetApi="q"> false </item>
         <item name="android:navigationBarColor" tools:targetApi="21">?attr/colorPrimaryVariant</item>
         <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
         <!-- Customize your theme here. -->
     </style>
 
@@ -44,7 +45,7 @@
     </style>
 
     <color name="mi_icon_color_dark">#ffffffff</color>
-    <color name="mi_icon_color_light">@color/purple_291965</color>
+    <color name="mi_icon_color_light">@color/purple_533EA8</color>
     <color name="mi_ripple_color">#17000000</color>
     <color name="mi_status_bar_background">#fff</color>
     <color name="mi_text_color_primary_dark">#ffffffff</color>

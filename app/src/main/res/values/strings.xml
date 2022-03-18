@@ -12,8 +12,16 @@
     <string name="vamos_comecar">Vamos começar?</string>
     <string name="coletar_de_dados">Coletar os dados</string>
     <string name="empresa">Empresa</string>
-    <string name="sobre_voce">Sobre o colaborador</string>
+    <string name="sobre_voce">Sobre o \ncolaborador</string>
     <string name="agora_que_voc_conhe_e_um_pouco_do_app">Agora que você conheçe um pouco do app, é hora de dar inicio a nossa jornada de trabalho!</string>
     <string name="sair_do_app">Sair do app</string>
     <string name="iniciar">Iniciar</string>
+    <string name="e_mail">E-mail</string>
+    <string name="senha">Senha</string>
+    <string name="ou_se_registre_com">Ou registre-se com</string>
+    <string name="ou_faca_login_com">Ou faça login com</string>
+    <string name="faca_login">Faça login</string>
+    <string name="nao_possui_conta">Não possui conta?</string>
+    <string name="registre_se">Registre-se</string>
+    <string name="faca_login_com_sua_conta">Faça login \ncom sua conta</string>
 </resources>

@@ -1,16 +1,19 @@
 package com.automatodev.home_ponto.view.activity
 
-import android.Manifest
 import android.content.Intent
-import android.content.pm.PackageManager
 import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.widget.EditText
 import android.widget.Toast
-import androidx.core.app.ActivityCompat
+import androidx.databinding.DataBindingUtil
+import androidx.fragment.app.Fragment
 import androidx.viewpager.widget.ViewPager
 import com.automatodev.home_ponto.R
+import com.automatodev.home_ponto.databinding.FragmentLoginBinding
+import com.automatodev.home_ponto.databinding.FragmentRegisterBinding
 import com.heinrichreimersoftware.materialintro.app.IntroActivity
 import com.heinrichreimersoftware.materialintro.slide.FragmentSlide
-import com.heinrichreimersoftware.materialintro.slide.SimpleSlide
 
 
 class IntroAppActivity : IntroActivity() {
@@ -45,6 +48,20 @@ class IntroAppActivity : IntroActivity() {
             FragmentSlide.Builder()
                 .fragment(R.layout.fragment_finish_intro)
                 .background(R.color.white)
+                .build()
+        )
+
+        addSlide(
+            FragmentSlide.Builder()
+                .background(R.color.white)
+                .fragment(R.layout.fragment_login)
+                .build()
+        )
+
+        addSlide(
+            FragmentSlide.Builder()
+                .background(R.color.white)
+                .fragment(R.layout.fragment_register)
                 .canGoForward(false)
                 .build()
         )
@@ -59,25 +76,29 @@ class IntroAppActivity : IntroActivity() {
             }
 
             override fun onPageSelected(position: Int) {
-                if (position == 3) {
-                    isButtonNextVisible = true
-                    setButtonNextOnClickListener { startCollectData() }
-                } else
-                    isButtonNextVisible = false
+                isPagerIndicatorVisible = position < 4
             }
 
             override fun onPageScrollStateChanged(state: Int) {
 
             }
         })
+
+
     }
 
-    fun startCollectData() {
-        if (!CollectDataActivity.status) {
-            startActivity(Intent(this, CollectDataActivity::class.java))
-            finish()
+    fun goRegister(view: View) {
+        nextSlide()
+    }
 
+    fun goLogin(view: View) {
+        previousSlide()
+    }
+
+    fun testData(view: View) {
+        if(!MainActivity.status) {
+            startActivity(Intent(this, MainActivity::class.java))
+            finish()
         }
     }
-
 }

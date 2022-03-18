@@ -13,13 +13,6 @@
         android:supportsRtl="true"
         tools:ignore="LockedOrientationActivity">
         <activity
-            android:name=".view.activity.CollectDataActivity"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustNothing"
-        android:theme="@style/Theme.Home_ponto_intro">
-
-        </activity>
-        <activity
             android:name=".view.activity.IntroAppActivity"
             android:exported="true"
             android:screenOrientation="portrait"

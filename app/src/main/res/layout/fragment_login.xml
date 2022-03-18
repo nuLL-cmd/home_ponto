@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <ScrollView
+        android:id="@+id/scroll_daddy_f_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:id="@+id/linear_parent_f_login"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            tools:context=".view.activity.CollectDataActivity"
+            android:layout_height="match_parent">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/anim_top_left_f_login"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_300sdp"
+                android:rotation="90"
+                android:translationX="-50dp"
+                android:translationY="-65dp"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="wave_white.json"
+                app:lottie_loop="true" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/anim_bottom_right_f_login"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="@dimen/_300sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:rotation="-90"
+                android:translationX="50dp"
+                android:translationY="65dp"
+                app:lottie_autoPlay="true"
+                app:lottie_fileName="wave_white.json"
+                app:lottie_loop="true" />
+
+
+
+
+            <com.heinrichreimersoftware.materialintro.view.parallax.ParallaxRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/lbl_title_f_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_80sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:fontFamily="@font/baloo_da"
+                    android:shadowColor="#85C8C8C8"
+                    android:shadowDx="3"
+                    android:shadowDy="3"
+                    android:shadowRadius="40"
+                    android:text="@string/faca_login_com_sua_conta"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/gray_596475"
+                    android:textSize="@dimen/_30sdp"
+                    android:textStyle="bold"
+                    app:layout_parallaxFactor="2" />
+
+                <com.heinrichreimersoftware.materialintro.view.parallax.ParallaxLinearLayout
+                    android:id="@+id/linear_register_f_login"
+                    android:layout_width="match_parent"
+                    android:layout_alignEnd="@+id/lbl_title_f_login"
+                    android:layout_below="@+id/lbl_title_f_login"
+                    android:layout_height="@dimen/_36sdp"
+                    android:gravity="center|end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/lbl_register_f_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@string/nao_possui_conta"
+                        android:textAlignment="center"
+                        android:textSize="@dimen/_10sdp" />
+
+                    <TextView
+                        android:id="@+id/txt_register_f_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:clickable="true"
+                        android:ellipsize="end"
+                        android:focusable="true"
+                        android:onClick="goRegister"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="@string/registre_se"
+                        android:textAlignment="center"
+                        android:textColor="@color/purple_533EA8"
+                        android:textSize="@dimen/_10sdp"
+                        android:textStyle="bold" />
+
+
+                </com.heinrichreimersoftware.materialintro.view.parallax.ParallaxLinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relative_data_f_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_300sdp"
+                    android:layout_below="@id/lbl_title_f_login"
+                    android:gravity="center|start">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignTop="@id/edt_email_f_login"
+                        android:layout_alignBottom="@id/edt_password_f_login"
+                        android:layout_toEndOf="@id/edt_password_f_login">
+
+                        <ImageButton
+                            android:id="@+id/btn_login_f_login"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_centerInParent="true"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_40sdp"
+                            android:background="@drawable/bg_button_circle"
+                            android:elevation="@dimen/_10sdp"
+                            android:onClick="testData"
+                            android:src="@drawable/ic_arrow_circle_right_24"
+                            tools:ignore="ContentDescription" />
+                    </RelativeLayout>
+
+
+                    <EditText
+                        android:id="@+id/edt_email_f_login"
+                        android:layout_width="@dimen/_210sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:background="@drawable/bg_edt_no_shadow_radius_top"
+                        android:drawableStart="@drawable/ic_baseline_email_purple_24"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:elevation="@dimen/_10sdp"
+                        android:hint="@string/e_mail"
+                        android:maxLines="1"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingEnd="@dimen/_20sdp"
+                        android:singleLine="true"
+                        android:textAllCaps="true"
+                        android:textColor="@color/gray_838383"
+                        android:textSize="@dimen/_11sdp"
+                        android:textStyle="bold" />
+
+
+                    <EditText
+                        android:id="@+id/edt_password_f_login"
+                        android:layout_width="@dimen/_210sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:layout_below="@id/edt_email_f_login"
+                        android:layout_marginTop="@dimen/_3sdp"
+                        android:layout_marginBottom="@dimen/_10sdp"
+                        android:background="@drawable/bg_edt_no_shadow_radius_bottom"
+                        android:drawableStart="@drawable/ic_password_purple_24"
+                        android:drawablePadding="@dimen/_10sdp"
+                        android:elevation="@dimen/_10sdp"
+                        android:hint="@string/senha"
+                        android:inputType="numberPassword"
+                        android:maxLines="1"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingEnd="@dimen/_20sdp"
+                        android:singleLine="true"
+                        android:textColor="@color/gray_596475"
+                        android:textSize="@dimen/_11sdp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relative_social_login_f_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/relative_data_f_login"
+                    android:layout_alignEnd="@id/lienar_social_media_f_login">
+
+
+                    <View
+                        android:id="@+id/view_separator_social_f_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_2sdp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:background="#E2E0E0" />
+
+
+                    <TextView
+                        android:id="@+id/lbl_social_f_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="#fff"
+                        android:padding="@dimen/_5sdp"
+                        android:text="@string/ou_faca_login_com"
+                        android:textSize="@dimen/_10sdp" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/lienar_social_media_f_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/relative_social_login_f_login"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom"
+                    android:orientation="horizontal"
+                    android:paddingStart="@dimen/_20sdp"
+                    android:paddingEnd="@dimen/_20sdp"
+                    android:paddingBottom="@dimen/_20sdp">
+
+                    <ImageButton
+                        android:id="@+id/btn_facebook_f_login"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:background="@drawable/bg_button_white_shadow_global"
+                        android:padding="@dimen/_10sdp"
+                        android:src="@drawable/ic_facebook_svg" />
+
+                    <ImageButton
+                        android:id="@+id/btn_google_f_login"
+                        android:layout_width="@dimen/_60sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:background="@drawable/bg_button_white_shadow_global"
+                        android:padding="@dimen/_10sdp"
+                        android:src="@drawable/ic_google_sgv" />
+
+
+                </LinearLayout>
+
+
+            </com.heinrichreimersoftware.materialintro.view.parallax.ParallaxRelativeLayout>
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+</layout>
