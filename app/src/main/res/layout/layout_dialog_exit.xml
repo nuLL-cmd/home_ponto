@@ -21,10 +21,13 @@
                 android:id="@+id/anim_exit_l_dialog_exit"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_150sdp"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
                 app:lottie_autoPlay="true"
-                android:layout_margin="@dimen/_10sdp"
-                app:lottie_fileName="bear_sad.json"
-                app:lottie_loop="false" />
+                app:lottie_fileName="cat_sad.json"
+                app:lottie_loop="true" />
 
             <TextView
                 android:id="@+id/lbl_exit_l_dialog_exit"

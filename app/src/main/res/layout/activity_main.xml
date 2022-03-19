@@ -142,12 +142,14 @@
                         android:id="@+id/txt_company_a_main"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
                         android:layout_below="@+id/txt_last_register_a_main"
                         android:layout_marginStart="@dimen/_15sdp"
                         android:fontFamily="@font/baloo_tamma_2"
                         android:text="@string/fujioka_eletro_imagem_sa"
                         android:textColor="#C8C7C7"
                         android:textStyle="bold" />
+
 
 
 
@@ -174,72 +176,84 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:gravity="center|top"
+
                 android:layout_below="@id/lbl_statistic_a_main">
 
-                 <androidx.cardview.widget.CardView
+                <androidx.cardview.widget.CardView
                     android:id="@+id/card_statistic_one_a_main"
                     android:layout_width="@dimen/_125sdp"
                     android:layout_height="@dimen/_120sdp"
-                    android:layout_marginStart="@dimen/_20sdp"
                     android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginStart="@dimen/_20sdp"
                     android:layout_marginEnd="@dimen/_10sdp"
                     android:backgroundTint="@color/purple_943EC3"
                     app:cardCornerRadius="@dimen/_20sdp"
-                    app:cardElevation="@dimen/_20sdp" >
+                    app:cardElevation="@dimen/_20sdp">
 
-                     <RelativeLayout
-                         android:layout_width="match_parent"
-                         android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
 
-                         <com.airbnb.lottie.LottieAnimationView
-                             android:id="@+id/anim_wave_statistics_one_a_main"
-                             android:layout_width="match_parent"
-                             android:layout_height="@dimen/_150sdp"
-                             android:alpha="0.3"
-                             app:lottie_autoPlay="true"
-                             app:lottie_fileName="wave.json"
-                             app:lottie_loop="true" />
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:id="@+id/anim_wave_statistics_one_a_main"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_150sdp"
+                            android:alpha="0.3"
+                            app:lottie_autoPlay="true"
+                            app:lottie_fileName="wave.json"
+                            app:lottie_loop="true" />
 
 
-                         <TextView
-                             android:id="@+id/lbl_title_card_statistic_one_a_main"
-                             android:layout_width="match_parent"
-                             android:layout_height="wrap_content"
-                             android:layout_marginStart="@dimen/_10sdp"
-                             android:layout_marginTop="@dimen/_15sdp"
-                             android:layout_marginEnd="@dimen/_10sdp"
-                             android:fontFamily="@font/baloo_tamma_2"
-                             android:gravity="center|start"
-                             android:text="Horas Extras"
-                             android:textColor="#C8C7C7"
-                             android:textSize="@dimen/_14sdp"
-                             android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/lbl_title_card_statistic_one_a_main"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:fontFamily="@font/baloo_tamma_2"
+                            android:gravity="center|start"
+                            android:text="Horas Extras"
+                            android:textColor="#C8C7C7"
+                            android:textSize="@dimen/_14sdp"
+                            android:textStyle="bold" />
 
-                         <TextView
-                             android:id="@+id/txt_title_card_statistic_one_a_main"
-                             android:layout_width="match_parent"
-                             android:layout_height="wrap_content"
-                             android:layout_below="@id/lbl_title_card_statistic_one_a_main"
-                             android:layout_marginStart="@dimen/_10sdp"
-                             android:layout_marginTop="@dimen/_8sdp"
-                             android:layout_marginEnd="@dimen/_10sdp"
-                             android:fontFamily="@font/baloo_tamma_2"
-                             android:gravity="bottom|start"
-                             android:text="78%"
-                             android:textColor="#C8C7C7"
-                             android:textSize="@dimen/_20sdp" />
+                        <TextView
+                            android:id="@+id/txt_title_card_statistic_one_a_main"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/lbl_title_card_statistic_one_a_main"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:fontFamily="@font/baloo_tamma_2"
+                            android:gravity="bottom|start"
+                            android:text="78%"
+                            android:textColor="#C8C7C7"
+                            android:textSize="@dimen/_20sdp" />
 
-                         <com.github.mikephil.charting.charts.HorizontalBarChart
-                             android:id="@+id/horizontal_bar_chart_card_statistic_one_a_main"
-                             android:layout_width="match_parent"
-                             android:layout_height="match_parent"
-                             android:layout_below="@id/txt_title_card_statistic_one_a_main"
-                             android:layout_marginTop="-10dp"
-                             android:layout_marginEnd="@dimen/_3sdp" />
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            app:cardCornerRadius="@dimen/_20sdp"
+                            app:cardElevation="@dimen/_20sdp">
 
-                     </RelativeLayout>
-                 </androidx.cardview.widget.CardView>
+                            <ProgressBar
+                                android:id="@+id/progressbar_one"
+                                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                                android:layout_width="@dimen/_100sdp"
+                                android:layout_height="match_parent"
+                                android:scaleY="20" />
+
+
+                        </androidx.cardview.widget.CardView>
+
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/card_statistic_two_a_main"
@@ -247,11 +261,11 @@
                     android:layout_height="@dimen/_120sdp"
                     android:layout_marginStart="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_alignParentEnd="true"
                     android:layout_marginEnd="@dimen/_20sdp"
-                    android:layout_toEndOf="@id/card_statistic_one_a_main"
                     android:backgroundTint="@color/purple_533EA8"
                     app:cardCornerRadius="@dimen/_20ssp"
-                    app:cardElevation="@dimen/_20sdp" >
+                    app:cardElevation="@dimen/_20sdp">
 
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -295,14 +309,24 @@
                             android:textColor="#C8C7C7"
                             android:textSize="@dimen/_20sdp" />
 
-                        <com.github.mikephil.charting.charts.HorizontalBarChart
-                            android:id="@+id/horizontal_bar_chart_card_statistic_two_a_main"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_below="@id/txt_title_card_statistic_two_a_main"
-                            android:layout_marginTop="-10dp"
-                            android:layout_marginEnd="@dimen/_3sdp" />
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            app:cardCornerRadius="@dimen/_20sdp"
+                            app:cardElevation="@dimen/_20sdp">
 
+                            <ProgressBar
+                                android:id="@+id/progressbar_two"
+                                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                                android:layout_width="@dimen/_100sdp"
+                                android:layout_height="match_parent"
+                                android:scaleY="20" />
+
+
+                        </androidx.cardview.widget.CardView>
 
 
                     </RelativeLayout>
@@ -326,7 +350,8 @@
                 <com.github.mikephil.charting.charts.LineChart
                     android:id="@+id/chart"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_alignParentBottom="true"
                     android:layout_below="@id/lbl_chart_a_main" />
 
 

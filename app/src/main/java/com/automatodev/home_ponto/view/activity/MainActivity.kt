@@ -1,6 +1,9 @@
 package com.automatodev.home_ponto.view.activity
 
+import android.animation.ObjectAnimator
 import android.annotation.SuppressLint
+import android.content.res.ColorStateList
+import android.graphics.BlendModeColorFilter
 import android.graphics.Color
 import android.graphics.drawable.GradientDrawable
 import android.os.Bundle
@@ -71,10 +74,23 @@ class MainActivity : AppCompatActivity(),
             BigDecimal(5)
         )
 
+
         val chartUtil = ChartUtil(this)
         chartUtil.setDataLineChart(values, months, binding.chart)
-        chartUtil.setDataHorizontalBarChart(binding.horizontalBarChartCardStatisticTwoAMain, 78f)
-        chartUtil.setDataHorizontalBarChart(binding.horizontalBarChartCardStatisticOneAMain, 27f)
+
+        binding.progressbarOne.max = 100
+        val currentProgressOne = 63
+        binding.progressbarTwo.max = 100
+        val currentProgressTwo = 27
+
+        binding.progressbarOne.progressTintList = ColorStateList.valueOf(Color.parseColor("#291965"))
+
+        ObjectAnimator.ofInt(binding.progressbarOne, "progress",currentProgressOne).setDuration(2000).start()
+
+        binding.progressbarTwo.progressDrawable.setColorFilter(
+            Color.parseColor("#291965"), android.graphics.PorterDuff.Mode.SRC_IN)
+
+        ObjectAnimator.ofInt(binding.progressbarTwo, "progress",currentProgressTwo).setDuration(2000).start()
 
     }
 
@@ -108,6 +124,7 @@ class MainActivity : AppCompatActivity(),
     private fun logout() {
 
         val dialog = BottomSheetDialog(this,R.style.BottomSheetDialogTheme)
+        dialog.window?.attributes?.windowAnimations = R.style.DialogAnimation
         dialog.window?.setBackgroundDrawableResource(android.R.color.transparent)
         val bindingDialog = DataBindingUtil.inflate<LayoutDialogExitBinding>(
             LayoutInflater.from(this),
@@ -117,7 +134,7 @@ class MainActivity : AppCompatActivity(),
         )
         bindingDialog.btnExitLDialogExit.setOnClickListener {
             Toast.makeText(this, "Você escolher sair...", Toast.LENGTH_SHORT).show()
-            finish()
+            finishAffinity()
         }
         dialog.setContentView(bindingDialog.root)
         dialog.show()
