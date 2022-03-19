@@ -13,6 +13,7 @@ import com.automatodev.home_ponto.R
 import com.automatodev.home_ponto.databinding.FragmentLoginBinding
 import com.automatodev.home_ponto.databinding.FragmentRegisterBinding
 import com.heinrichreimersoftware.materialintro.app.IntroActivity
+import com.heinrichreimersoftware.materialintro.app.NavigationPolicy
 import com.heinrichreimersoftware.materialintro.slide.FragmentSlide
 
 
@@ -96,7 +97,7 @@ class IntroAppActivity : IntroActivity() {
     }
 
     fun testData(view: View) {
-        if(!MainActivity.status) {
+        if (!MainActivity.status) {
             startActivity(Intent(this, MainActivity::class.java))
             finish()
         }

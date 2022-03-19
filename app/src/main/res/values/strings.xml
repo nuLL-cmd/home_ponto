@@ -14,7 +14,6 @@
     <string name="empresa">Empresa</string>
     <string name="sobre_voce">Sobre o \ncolaborador</string>
     <string name="agora_que_voc_conhe_e_um_pouco_do_app">Agora que você conheçe um pouco do app, é hora de dar inicio a nossa jornada de trabalho!</string>
-    <string name="sair_do_app">Sair do app</string>
     <string name="iniciar">Iniciar</string>
     <string name="e_mail">E-mail</string>
     <string name="senha">Senha</string>
@@ -24,4 +23,15 @@
     <string name="nao_possui_conta">Não possui conta?</string>
     <string name="registre_se">Registre-se</string>
     <string name="faca_login_com_sua_conta">Faça login \ncom sua conta</string>
+    <string name="registrar_ponto">Registrar ponto</string>
+    <string name="_20_fevereiro">20 Fevereiro</string>
+    <string name="estatisticas">ESTATÍSTICAS</string>
+    <string name="acompanhamento_grafico">GRÁFICO MENSAL</string>
+    <string name="o_ultimo_registro">O último registro ocorreu as: 08:00</string>
+    <string name="fujioka_eletro_imagem_sa">FUJIOKA ELETRO IMAGEM SA</string>
+    <string name="configuracoes">Configurações</string>
+    <string name="sair_do_app">Sair do app</string>
+    <string name="sobre">Sobre</string>
+    <string name="deseja_sair_do_aplicativo">Deseja sair do aplicativo?\n(Toque no vazio para cancelar)</string>
+    <string name="sim">Sim</string>
 </resources>

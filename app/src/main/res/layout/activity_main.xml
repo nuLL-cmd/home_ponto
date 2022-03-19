@@ -31,7 +31,7 @@
                 android:layout_marginBottom="@dimen/_24sdp"
                 android:layout_toStartOf="@id/btn_settings_a_main"
                 android:fontFamily="@font/baloo_da"
-                android:text="20 Fevereiro"
+                android:text="@string/_20_fevereiro"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_20sdp" />
 
@@ -40,6 +40,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@id/txt_date_a_main"
+                android:onClick="showMenu"
                 android:layout_alignBottom="@id/txt_date_a_main"
                 android:layout_alignParentEnd="true"
                 android:layout_marginEnd="@dimen/_10sdp"
@@ -64,6 +65,18 @@
                     android:gravity="start"
                     android:layout_height="match_parent">
 
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/anim_wave_tree_a_main"
+                        android:layout_width="@dimen/_200sdp"
+                        android:layout_height="@dimen/_150sdp"
+                        android:alpha="0.3"
+                        android:rotation="90"
+                        android:translationX="-31dp"
+                        app:lottie_autoPlay="true"
+                        app:lottie_fileName="wave.json"
+                        app:lottie_loop="true" />
+
                     <com.airbnb.lottie.LottieAnimationView
                         android:id="@+id/anim_wave_one_a_main"
                         android:layout_width="@dimen/_200sdp"
@@ -74,23 +87,250 @@
                         app:lottie_autoPlay="true"
                         app:lottie_fileName="wave.json"
                         app:lottie_loop="true" />
+
                     <com.airbnb.lottie.LottieAnimationView
                         android:id="@+id/anim_wave_two_a_main"
                         android:layout_width="@dimen/_200sdp"
                         android:layout_height="@dimen/_150sdp"
-                        android:scaleX="-1"
-                        android:alpha="0.4"
-                        android:translationY="@dimen/_30sdp"
                         android:layout_alignParentEnd="true"
+                        android:alpha="0.4"
+                        android:scaleX="-1"
                         android:translationX="31dp"
+                        android:translationY="@dimen/_30sdp"
                         app:lottie_autoPlay="true"
                         app:lottie_fileName="wave.json"
                         app:lottie_loop="true" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/btn_register_data_a_main"
+                        style="@style/Widget.AppCompat.ButtonBar.AlertDialog"
+                        android:layout_width="@dimen/_120sdp"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:layout_marginBottom="@dimen/_15sdp"
+                        android:background="@drawable/bg_button_white_global"
+                        android:text="@string/registrar_ponto"
+                        android:textAlignment="center"
+                        android:textColor="@color/purple_533EA8"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_day_week_a_main"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:fontFamily="@font/baloo_tamma_2"
+                        android:text="Segunda-feira"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_18sdp" />
+
+                    <TextView
+                        android:id="@+id/txt_last_register_a_main"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_day_week_a_main"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:fontFamily="@font/baloo_tamma_2"
+                        android:text="@string/o_ultimo_registro"
+                        android:textColor="#C8C7C7"
+                        android:textStyle="italic" />
+
+                    <TextView
+                        android:id="@+id/txt_company_a_main"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_last_register_a_main"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:fontFamily="@font/baloo_tamma_2"
+                        android:text="@string/fujioka_eletro_imagem_sa"
+                        android:textColor="#C8C7C7"
+                        android:textStyle="bold" />
+
+
 
                 </RelativeLayout>
 
             </androidx.cardview.widget.CardView>
 
+
+            <TextView
+                android:id="@+id/lbl_statistic_a_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_primary_data_a_main"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_25ssp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:fontFamily="@font/baloo_tamma_2"
+                android:gravity="center|start"
+                android:text="@string/estatisticas"
+                android:textColor="#C8C7C7"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|top"
+                android:layout_below="@id/lbl_statistic_a_main">
+
+                 <androidx.cardview.widget.CardView
+                    android:id="@+id/card_statistic_one_a_main"
+                    android:layout_width="@dimen/_125sdp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:backgroundTint="@color/purple_943EC3"
+                    app:cardCornerRadius="@dimen/_20sdp"
+                    app:cardElevation="@dimen/_20sdp" >
+
+                     <RelativeLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="match_parent">
+
+                         <com.airbnb.lottie.LottieAnimationView
+                             android:id="@+id/anim_wave_statistics_one_a_main"
+                             android:layout_width="match_parent"
+                             android:layout_height="@dimen/_150sdp"
+                             android:alpha="0.3"
+                             app:lottie_autoPlay="true"
+                             app:lottie_fileName="wave.json"
+                             app:lottie_loop="true" />
+
+
+                         <TextView
+                             android:id="@+id/lbl_title_card_statistic_one_a_main"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_marginStart="@dimen/_10sdp"
+                             android:layout_marginTop="@dimen/_15sdp"
+                             android:layout_marginEnd="@dimen/_10sdp"
+                             android:fontFamily="@font/baloo_tamma_2"
+                             android:gravity="center|start"
+                             android:text="Horas Extras"
+                             android:textColor="#C8C7C7"
+                             android:textSize="@dimen/_14sdp"
+                             android:textStyle="bold" />
+
+                         <TextView
+                             android:id="@+id/txt_title_card_statistic_one_a_main"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content"
+                             android:layout_below="@id/lbl_title_card_statistic_one_a_main"
+                             android:layout_marginStart="@dimen/_10sdp"
+                             android:layout_marginTop="@dimen/_8sdp"
+                             android:layout_marginEnd="@dimen/_10sdp"
+                             android:fontFamily="@font/baloo_tamma_2"
+                             android:gravity="bottom|start"
+                             android:text="78%"
+                             android:textColor="#C8C7C7"
+                             android:textSize="@dimen/_20sdp" />
+
+                         <com.github.mikephil.charting.charts.HorizontalBarChart
+                             android:id="@+id/horizontal_bar_chart_card_statistic_one_a_main"
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent"
+                             android:layout_below="@id/txt_title_card_statistic_one_a_main"
+                             android:layout_marginTop="-10dp"
+                             android:layout_marginEnd="@dimen/_3sdp" />
+
+                     </RelativeLayout>
+                 </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_statistic_two_a_main"
+                    android:layout_width="@dimen/_125sdp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:layout_toEndOf="@id/card_statistic_one_a_main"
+                    android:backgroundTint="@color/purple_533EA8"
+                    app:cardCornerRadius="@dimen/_20ssp"
+                    app:cardElevation="@dimen/_20sdp" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:id="@+id/anim_wave_statistics_two_a_main"
+                            android:layout_width="@dimen/_200sdp"
+                            android:layout_height="@dimen/_150sdp"
+                            android:alpha="0.3"
+                            android:rotation="180"
+                            app:lottie_autoPlay="true"
+                            app:lottie_fileName="wave.json"
+                            app:lottie_loop="true" />
+
+                        <TextView
+                            android:id="@+id/lbl_title_card_statistic_two_a_main"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:fontFamily="@font/baloo_tamma_2"
+                            android:gravity="center|start"
+                            android:text="Duração"
+                            android:textColor="#C8C7C7"
+                            android:textSize="@dimen/_14sdp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt_title_card_statistic_two_a_main"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/lbl_title_card_statistic_two_a_main"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginTop="@dimen/_8sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:fontFamily="@font/baloo_tamma_2"
+                            android:gravity="bottom|start"
+                            android:text="7h 50m"
+                            android:textColor="#C8C7C7"
+                            android:textSize="@dimen/_20sdp" />
+
+                        <com.github.mikephil.charting.charts.HorizontalBarChart
+                            android:id="@+id/horizontal_bar_chart_card_statistic_two_a_main"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@id/txt_title_card_statistic_two_a_main"
+                            android:layout_marginTop="-10dp"
+                            android:layout_marginEnd="@dimen/_3sdp" />
+
+
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/lbl_chart_a_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/card_statistic_one_a_main"
+                    android:layout_marginStart="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_25ssp"
+                    android:layout_marginEnd="@dimen/_20sdp"
+                    android:fontFamily="@font/baloo_tamma_2"
+                    android:gravity="center|start"
+                    android:text="@string/acompanhamento_grafico"
+                    android:textColor="#C8C7C7"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold" />
+
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/lbl_chart_a_main" />
+
+
+            </RelativeLayout>
 
 
         </RelativeLayout>

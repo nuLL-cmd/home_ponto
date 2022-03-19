@@ -6,35 +6,35 @@
         <shape>
             <padding android:top="@dimen/_1sdp" android:right="@dimen/_1sdp" android:bottom="@dimen/_1sdp" android:left="@dimen/_1sdp" />
             <corners android:radius="@dimen/_10sdp" />
-            <solid android:color="#07345D5B" />
+            <solid android:color="#07533EA8" />
         </shape>
     </item>
     <item>
         <shape>
             <padding android:top="@dimen/_1sdp" android:right="@dimen/_1sdp" android:bottom="@dimen/_1sdp" android:left="@dimen/_1sdp" />
             <corners android:radius="@dimen/_10sdp" />
-            <solid android:color="#11345D5B" />
+            <solid android:color="#11533EA8" />
         </shape>
     </item>
     <item>
         <shape>
             <padding android:top="@dimen/_1sdp" android:right="@dimen/_1sdp" android:bottom="@dimen/_1sdp" android:left="@dimen/_1sdp" />
             <corners android:radius="@dimen/_10sdp" />
-            <solid android:color="#1E345D5B" />
+            <solid android:color="#1B533EA8" />
         </shape>
     </item>
     <item>
         <shape>
             <padding android:top="@dimen/_1sdp" android:right="@dimen/_1sdp" android:bottom="@dimen/_1sdp" android:left="@dimen/_1sdp" />
             <corners android:radius="@dimen/_10sdp" />
-            <solid android:color="#31345D5B" />
+            <solid android:color="#31533EA8" />
         </shape>
     </item>
     <item>
         <shape>
             <padding android:top="@dimen/_1sdp" android:right="@dimen/_1sdp" android:bottom="@dimen/_1sdp" android:left="@dimen/_1sdp" />
             <corners android:radius="@dimen/_10sdp" />
-            <solid android:color="#4F09625A" />
+            <solid android:color="#4F533EA8" />
         </shape>
     </item>
 
@@ -45,7 +45,7 @@
 
             <item android:id="@+id/mask">
                 <shape android:name="shape_unselected">
-                    <solid android:color="@color/purple_943EC3"/>
+                    <solid android:color="@color/purple_533EA8"/>
                     <corners android:radius="@dimen/_10sdp"/>
                 </shape>
 

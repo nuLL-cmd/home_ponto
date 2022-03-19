@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="green_B0D9D7">#B0D9D7 </color>
     <color name="orange_FF643D">#FF643D</color>
-    <color name="white_FBFDFF">#FBFDFF </color>
-    <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="background_F2F8FB">#F2F8FB </color>
+    <color name="white_FBFDFF">#FBFDFF </color>
+    <color name="white_f3f6ff">#f3f6ff</color>
+    <color name="white_F2F8FB">#F2F8FB </color>
+    <color name="black">#FF000000</color>
     <color name="red_EF2917">#EF2917</color>
     <color name="green_96AFB1">#96AFB1 </color>
-    <color name="gray_596475">#596475</color>
-    <color name="gray_838383">#838383</color>
     <color name="green_345d5b">#345d5b</color>
+    <color name="green_B0D9D7">#B0D9D7 </color>
+    <color name="gray_596475">#596475</color>
+    <color name="qray_5A5A5A">#5A5A5A</color>
+    <color name="gray_838383">#838383</color>
+    <color name="gray_CDCDCD">#CDCDCD</color>
     <color name="purple_291965">#291965</color>
     <color name="purple_943EC3">#943EC3</color>
     <color name="purple_533EA8">#533EA8</color>

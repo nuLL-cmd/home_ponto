@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/itemSettings"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_tools"
+        android:title="@string/configuracoes"/>
+
+    <item
+        android:id="@+id/itemAbout"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_info"
+        android:title="@string/sobre"/>
+
+    <item
+        android:id="@+id/itemExit"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_round_exit"
+        android:title="@string/sair_do_app"/>
+
+
+
+
+
+</menu>

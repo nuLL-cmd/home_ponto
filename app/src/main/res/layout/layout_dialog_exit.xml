@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relative_daddy_l_dialog_exit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_15sdp"
+            android:background="@drawable/bg_dialog_global">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/anim_exit_l_dialog_exit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp"
+                app:lottie_autoPlay="true"
+                android:layout_margin="@dimen/_10sdp"
+                app:lottie_fileName="bear_sad.json"
+                app:lottie_loop="false" />
+
+            <TextView
+                android:id="@+id/lbl_exit_l_dialog_exit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/anim_exit_l_dialog_exit"
+                android:padding="@dimen/_5sdp"
+                android:shadowColor="#85C8C8C8"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="40"
+                android:text="@string/deseja_sair_do_aplicativo"
+                android:textAlignment="center"
+                android:textSize="@dimen/_12sdp" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_exit_l_dialog_exit"
+                style="@style/Widget.AppCompat.ButtonBar.AlertDialog"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_below="@id/lbl_exit_l_dialog_exit"
+                android:layout_marginStart="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_50sdp"
+                android:layout_marginBottom="@dimen/_25sdp"
+                android:background="@drawable/bg_button_shadow_green"
+                android:text="@string/sim"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</layout>
