@@ -27,7 +27,7 @@ class SplashActivity : AppCompatActivity() {
 
     private fun resumeSplashScreen() {
         val preferences = AppPreferences(this).getAppPreferences()
-        val thread = Thread(){
+        val thread = Thread {
             run {
                 Thread.sleep(2000)
                 val showIntro = preferences.showIntro ?: false

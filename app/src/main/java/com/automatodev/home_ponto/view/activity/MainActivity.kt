@@ -74,7 +74,6 @@ class MainActivity : AppCompatActivity(),
             BigDecimal(5)
         )
 
-
         val chartUtil = ChartUtil(this)
         chartUtil.setDataLineChart(values, months, binding.chart)
 
